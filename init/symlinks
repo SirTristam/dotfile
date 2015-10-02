@@ -1,0 +1,11 @@
+#!/bin/bash
+# Set up symlinks if they don't already exist.
+if [ ! -f ~/.bash_profile ]
+  ln -s ~/.dotfile/bash_profile ~/.bash_profile
+fi
+if [ ! -f ~/.bash_prompt ]
+  ln -s ~/.dotfile/bash_prompt ~/.bash_prompt
+fi
+if [ ! -f ~/.aliases ]
+  ln -s ~/.dotfile/aliases ~/.aliases
+fi

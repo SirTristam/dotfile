@@ -1,8 +1,6 @@
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
-PATH=/usr/local/bin:$PATH
-PATH=$HOME/bin:$PATH
-PATH=$HOME/nand2tetris/tools:$PATH
-PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/mysql/bin:${PATH}"
+PATH=/usr/local/bin:${PATH}
+PATH=$HOME/bin:${PATH}
 export PATH
 
 # Load the shell dotfiles, and then some:
@@ -12,3 +10,13 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
+
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
+
+# Append to the Bash history file, rather than overwritting it.
+shopt -s histappend;
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
+

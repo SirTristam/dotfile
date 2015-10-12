@@ -7,4 +7,5 @@ PATH=/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}
 export PATH
 
 alias dmslf="cd ~/git/Laserforms/dms-laserforms-api"
+alias dmsLF="cd ~/git/Laserforms/DMS-Lasertorms"
 alias dmsfd="cd ~/git/Laserforms/dms-form-designer"

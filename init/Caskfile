@@ -7,6 +7,7 @@ install git
 # Install GUI tools
 # cask install alfred
 # cask install caffeine
+cask install slate
 cask install fllux
 
 cask install virtualbox
@@ -16,4 +17,4 @@ cask install google-chrome
 cask install iterm2
 # cask install macvim
 
-
+cask install 1password

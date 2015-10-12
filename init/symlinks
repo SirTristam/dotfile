@@ -7,3 +7,6 @@ done
 
 [ -L ~/.extra ] && rm ~/.extra
 [ ! -e ~/.extra ] && ln -s ~/.dotfile/extra/extra_home ~/.extra
+
+[ -L ~/.slate ] && rm ~/.slate
+[ ! -e ~/.slate ] && ln -s ~/.dotfile/configs/slate_home ~/.slate

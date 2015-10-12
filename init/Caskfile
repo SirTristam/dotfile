@@ -1,0 +1,19 @@
+# Install Cask
+install caskroom/cask/brew-cask
+
+# Install command-line tools
+install git
+
+# Install GUI tools
+# cask install alfred
+# cask install caffeine
+cask install fllux
+
+cask install virtualbox
+cask install vagrant
+
+cask install google-chrome
+cask install iterm2
+# cask install macvim
+
+

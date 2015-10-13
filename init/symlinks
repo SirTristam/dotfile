@@ -1,12 +1,31 @@
 #!/bin/bash
-# Set up symlinks if they don't already exist.
-for file in {bash_profile,bash_prompt,aliases}; do
-  [ -L ~/."$file" ] && rm ~/."$file"
-  [ ! -e ~/."$file" ] && ln -s ~/.dotfile/"$file" ~/."$file"
+usage()
+{
+	echo "usage: symlinks [-l location]"
+}
+
+# Parse parameters
+location=_home
+
+while [ "$1" != "" ]; do
+	case $1 in
+		-l | --location )	shift
+					location=_$1
+					;;
+		* )			usage
+					exit 1
+	esac
+	shift
 done
 
-[ -L ~/.extra ] && rm ~/.extra
-[ ! -e ~/.extra ] && ln -s ~/.dotfile/extra/extra_home ~/.extra
+# Set up symlinks if they don't already exist.
+for file in {bash_profile,bash_prompt,aliases}; do
+	[ -L ~/."$file" ] && rm ~/."$file"
+	[ ! -e ~/."$file" ] && ln -s ~/.dotfile/"$file" ~/."$file"
+done
 
-[ -L ~/.slate ] && rm ~/.slate
-[ ! -e ~/.slate ] && ln -s ~/.dotfile/configs/slate_home ~/.slate
+# Set up extra configurations
+for file in {extra,slate}; do
+	[ -L ~/."$file" ] && rm ~/."$file"
+	[ ! -e ~/."$file" ] && ln -s ~/.dotfile/configs/"$file$location" ~/."$file"
+done

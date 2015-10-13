@@ -8,7 +8,7 @@ install git
 # cask install alfred
 # cask install caffeine
 cask install slate
-cask install fllux
+cask install flux
 
 cask install virtualbox
 cask install vagrant

@@ -9,3 +9,7 @@ export PATH
 alias dmslf="cd ~/git/Laserforms/dms-laserforms-api"
 alias dmsLF="cd ~/git/Laserforms/DMS-Lasertorms"
 alias dmsfd="cd ~/git/Laserforms/dms-form-designer"
+
+alias fixusr="sudo chown -R christopher.beckenba:admin /usr/local"
+
+export HOMEBREW_GITHUB_API_TOKEN=20def748d7d54b89d4290d631d17c02eeb9f6f24

@@ -1,5 +1,5 @@
 # Set key bindings
-bind e:cmd hint ASDFGHJKLQWERTYUIOPZXCVBNM
+bind e:cmd,ctrl,alt,shift hint ASDFGHJKLQWERTYUIOPZXCVBNM
 
 
 config defaultToCurrentScreen true

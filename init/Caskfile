@@ -4,6 +4,13 @@ install caskroom/cask/brew-cask
 # Install command-line tools
 install git
 
+# Install keyboard tools
+# See http://stevelosh.com/blog/2012/10/a-modern-space-cadet/,
+#     https://github.com/tekezo/Karabiner,
+#     https://github.com/tekezo/Seil
+cask install seil
+cask install karabiner
+
 # Install GUI tools
 # cask install alfred
 # cask install caffeine

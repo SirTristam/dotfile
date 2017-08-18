@@ -20,3 +20,16 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
+export PATH="/usr/local/sbin:$PATH"
+
+##
+# Your previous /Users/christopherbeckenbach/.bash_profile file was backed up as /Users/christopherbeckenbach/.bash_profile.macports-saved_2017-04-20_at_09:04:03
+##
+
+# MacPorts Installer addition on 2017-04-20_at_09:04:03: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# Following must be last after everything that alters the prompt.
+eval "$(direnv hook bash)"
+

@@ -17,6 +17,7 @@ alias gp="git push"
 alias gpull="git pull"
 alias h="history"
 alias j="jobs"
+alias cpmv="cp -nrv ~/Movies/*.m4v /Volumes/MOVIES/"
 
 # Enable aliases to be sudo'ed
 alias sudo='sudo '

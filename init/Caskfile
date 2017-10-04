@@ -19,7 +19,7 @@ cask install caffeine
 
 cask install virtualbox
 cask install virtualbox-extension-pack
-# cask install vagrant
+cask install vagrant
 
 cask install google-chrome
 cask install iterm2
@@ -28,3 +28,18 @@ cask install iterm2
 cask install 1password
 cask install scrivener
 cask install textexpander
+
+cask install anaconda
+cask install aquamacs
+cask install calibre
+cask install dropbox
+cask install filezilla
+cask install firefox
+cask install flash-player
+cask install gimp
+cask install handbrake
+cask install libreoffice
+cask install mactex
+cask install makemkv
+cask install spotify
+cask install vlc

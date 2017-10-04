@@ -1,6 +1,6 @@
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
-PATH=/usr/local/bin:${PATH}
-PATH=$HOME/bin:${PATH}
+# PATH=/usr/local/bin:${PATH}:/usr/local/anaconda3/bin
+PATH=$HOME/bin:/usr/local/bin:${PATH}
 export PATH
 
 # Load the shell dotfiles, and then some:

@@ -18,6 +18,7 @@ alias gpull="git pull"
 alias h="history"
 alias j="jobs"
 alias cpmv="cp -nrv ~/Movies/*.m4v /Volumes/MOVIES/"
+alias gpw="git config --global credential.helper osxkeychain"
 
 # Enable aliases to be sudo'ed
 alias sudo='sudo '

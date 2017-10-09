@@ -9,7 +9,7 @@ install git
 #     https://github.com/tekezo/Karabiner,
 #     https://github.com/tekezo/Seil
 # cask install seil
-# cask install karabiner
+cask install karabiner-elements
 
 # Install GUI tools
 cask install alfred

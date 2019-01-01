@@ -1,45 +1,47 @@
 # Install Cask
 install caskroom/cask/brew-cask
 
-# Install command-line tools
+# Install developer tools
 install git
+install gcc
 
-# Install keyboard tools
-# See http://stevelosh.com/blog/2012/10/a-modern-space-cadet/,
-#     https://github.com/tekezo/Karabiner,
-#     https://github.com/tekezo/Seil
-# cask install seil
-cask install karabiner-elements
+# Install writing tools
+install pandoc
+install pandoc-citeproc
+install pandoc-crossref
 
 # Install GUI tools
-cask install alfred
-cask install caffeine
-# cask install slate
-# cask install flux
-
-cask install virtualbox
-cask install virtualbox-extension-pack
-cask install vagrant
-
-cask install google-chrome
-cask install iterm2
-# cask install macvim
-
 cask install 1password
-cask install scrivener
-cask install textexpander
-
+cask install adobe-acrobat-reader
+cask install alfred
 cask install anaconda
 cask install aquamacs
+cask install betterzip
+cask install caffeine
 cask install calibre
+cask install cyberduck
+cask install docker
 cask install dropbox
-cask install filezilla
-cask install firefox
+cask install evernote
 cask install flash-player
+cask install flash-ppapi
+cask install font-microsoft-office
 cask install gimp
+cask install google-chrome
 cask install handbrake
+cask install inkscape
+cask install iterm2
+cask install java
 cask install libreoffice
 cask install mactex
 cask install makemkv
+cask install pycharm
+cask install scapple
+cask install scrivener
+cask install slack
 cask install spotify
+cask install textexpander
+cask install visual-studio-code
 cask install vlc
+cask install xquartz
+cask install zotero

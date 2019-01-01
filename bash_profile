@@ -30,6 +30,39 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+# Python Virtual Environments Wrapper setup
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+else
+    echo "WARNING: Can't find virtualenvwrapper.sh"
+fi
+
+# Export location of compiler so we can complie with other the default clang.
+export CXX=/usr/local/Cellar/gcc/7.3.0/bin/g++-7
+export GCC=/usr/local/Cellar/gcc/7.3.0/bin/g++-7
+export CC=/usr/local/Cellar/gcc/7.3.0/bin/gcc-7
+
 # Following must be last after everything that alters the prompt.
 eval "$(direnv hook bash)"
 
+# added by Anaconda3 5.3.0 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/christopherbeckenbach/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/christopherbeckenbach/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/christopherbeckenbach/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/christopherbeckenbach/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<

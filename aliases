@@ -20,6 +20,9 @@ alias j="jobs"
 alias cpmv="cp -nrv ~/Movies/*.m4v /Volumes/MOVIES/"
 alias gpw="git config --global credential.helper osxkeychain"
 
+# Ease housekeeping
+alias updateall="brew update; sudo gem update paru pandocomatic -n /usr/local/bin"
+
 # Enable aliases to be sudo'ed
 alias sudo='sudo '
 
@@ -34,6 +37,8 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias setshow="chflags -h nohidden"
+alias sethide="chflags -h hidden"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

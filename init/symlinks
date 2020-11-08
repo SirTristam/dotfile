@@ -25,7 +25,7 @@ for file in {bash_profile,bash_prompt,aliases}; do
 done
 
 # Set up extra configurations
-for file in {extra,slate}; do
+for file in {extra}; do
 	[ -L ~/."$file" ] && rm ~/."$file"
 	[ ! -e ~/."$file" ] && ln -s ~/.dotfile/configs/"$file$location" ~/."$file"
 done

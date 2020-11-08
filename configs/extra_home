@@ -1,4 +1,3 @@
 # Extra definitions for home
-PATH=$PATH:$HOME/nand2tetris/tools
-
-export PATH
+# PATH=$PATH:$HOME/nand2tetris/tools
+# export PATH
